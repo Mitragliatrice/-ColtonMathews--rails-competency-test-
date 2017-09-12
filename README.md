@@ -17,21 +17,21 @@ The project will have multiple roles that interact with each other.
 ### Guests (No Login)
 
 - Can see homepage with first 3 articles from each category.
-- Can see article index page.
-- Are sent to signup page if they want to see article show page.
-- Can signup
-- Can Login
+- X  Can see article index page.
+- X Are sent to signup page if they want to see article show page.
+- X Can signup
+- X Can Login
 
 ### Vanilla Users
 
-- Can see everything a guest can
-- Can see article show pages.
-- Can logout
+- X Can see everything a guest can
+- X Can see article show pages.
+- X Can logout
 
 ### Editor Users
 
-- Can do everything a vanilla User can.
-- Can create articles
+- X Can do everything a vanilla User can.
+- X Can create articles
 - Can delete articles that they created
 - Can edit articles that they created
 
@@ -39,7 +39,8 @@ The project will have multiple roles that interact with each other.
 
 - Can create users and set roles.
 - Can edit users and change roles.
--  Can't edit/destroy/create articles.
+- Can't edit/destroy/create articles.
+- ADMINISTRATE
 
 ## Article Table
 
