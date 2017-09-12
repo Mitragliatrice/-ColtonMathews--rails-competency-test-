@@ -21,18 +21,16 @@ end
 
 private
 
-def fetch_params
-  @article = Article.find(params[:id])
-end
+  def fetch_params
+    @article = Article.find(params[:id])
+  end
 
-def set_article
-  params.require(:article).permit(:title,
-                                      :content,
-                                      :category,
-                                      :user_id
-                                      )
-end
-
-
+  def set_article
+    params.require(:article).permit(:title,
+                                        :content,
+                                        :category,
+                                        :user_id
+                                        )
+  end
 
 end
