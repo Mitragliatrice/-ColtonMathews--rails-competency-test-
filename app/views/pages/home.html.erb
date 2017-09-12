@@ -1,20 +1,7 @@
-<div>
-  <% @articles_stuff.each do |stuff| %>
-  <p><%= stuff.title %></p>
-  <%= stuff.content %>
-  <% end %>
-</div>
 
-<div>
-  <% @articles_things.each do |things| %>
-  <p><%= things.title %></p>
-  <%= things.content %>
-  <% end %>
-</div>
 
-<div>
-  <% @articles_those.each do |those| %>
-  <p><%= those.title %></p>
-  <%= those.content %>
-  <% end %>
-</div>
+
+
+<%= render 'stuff' %>
+<%=  render 'things' %>
+<%=  render 'those' %>
