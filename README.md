@@ -37,9 +37,9 @@ The project will have multiple roles that interact with each other.
 
 ### Admin User (Extra Credit)
 
-- Can create users and set roles.
-- Can edit users and change roles.
-- Can't edit/destroy/create articles.
+- X Can create users and set roles.
+- X Can edit users and change roles.
+- X Can't edit/destroy/create articles.
 - ADMINISTRATE
 
 ## Article Table
