@@ -17,7 +17,7 @@ The project will have multiple roles that interact with each other.
 ### Guests (No Login)
 
 - Can see homepage with first 3 articles from each category.
-- X  Can see article index page.
+- X Can see article index page.
 - X Are sent to signup page if they want to see article show page.
 - X Can signup
 - X Can Login
@@ -32,8 +32,8 @@ The project will have multiple roles that interact with each other.
 
 - X Can do everything a vanilla User can.
 - X Can create articles
-- Can delete articles that they created
-- Can edit articles that they created
+- X Can delete articles that they created
+- X Can edit articles that they created
 
 ### Admin User (Extra Credit)
 
