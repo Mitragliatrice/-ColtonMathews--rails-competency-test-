@@ -1,15 +1,20 @@
-<% @articles_stuff do |stuff| %>
-<%= stuff.title %>
-<%= stuff.content %>
-<% end %>
+<div>
+  <% @articles_stuff.each do |stuff| %>
+  <p><%= stuff.title %></p>
+  <%= stuff.content %>
+  <% end %>
+</div>
 
-<% @articles_things do |stuff| %>
-<%= stuff.title %>
-<%= stuff.content %>
-<% end %>
+<div>
+  <% @articles_things.each do |things| %>
+  <p><%= things.title %></p>
+  <%= things.content %>
+  <% end %>
+</div>
 
-
-<% @articles_those do |stuff| %>
-<%= stuff.title %>
-<%= stuff.content %>
-<% end %>
+<div>
+  <% @articles_those.each do |those| %>
+  <p><%= those.title %></p>
+  <%= those.content %>
+  <% end %>
+</div>
