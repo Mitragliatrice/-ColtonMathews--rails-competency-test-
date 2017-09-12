@@ -47,7 +47,7 @@ Table will contain title, content, category, user_id.
 
 ## Roles
 
-Use one of these gems: Petergate (Preferred), Pundit, Cancancan.
+Petergate
 
 ### Role Names
 
@@ -57,16 +57,16 @@ Use one of these gems: Petergate (Preferred), Pundit, Cancancan.
 
 ## Database
 
-Use sqlite
+X Use sqlite
 
 ## Testing
 
-Use minitest as the test suite.
+It was requested we use minitest. I'm not familiar with minitest and I have little time to learn, so in order to complete the project, I implimented Rspec.
 
 ## Authentication
 
-Devise can be used for authentication.
+Devise
 
 ## Templating
 
-slim (Prefered), haml, erb
+X ERB
