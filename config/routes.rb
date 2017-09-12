@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
+  resources :articles
   devise_for :users
   get 'home', to: 'pages#home'
 
-  resources :articles
 
 
   root to: 'pages#home'
