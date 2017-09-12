@@ -1,14 +1,24 @@
-<ul>
-  <li>
-    <%= link_to 'Home', root_path %>
-  </li>
-  <li>
-    <%= link_to 'Articles', articles_path %>
-  </li>
-  <li>
-      <%= login_helper %>
-  </li>
-  <li>
-      <%= link_to 'Admin Dash', admin_users_path %>
-  </li>
-</ul>
+<nav class="light-blue lighten-1" role="navigation">
+  <div class="nav-wrapper container">
+    <ul class="right hide-on-med-and-down">
+      <li>
+        <%= link_to 'Articles', articles_path %>
+      </li>
+    </ul>
+    <ul class="right hide-on-med-and-down">
+      <li><%= link_to 'Home', root_path %></li>
+    </ul>
+    <ul>
+      <li class="right hide-on-med-and-down"><%= link_to 'Admin Dash', admin_users_path if admin? %></li>
+    </ul>
+    <ul>
+      <% if user_signed_in?%>
+      <li><%= link_to current_user.email, edit_user_registration_path %></li>
+      <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+      <% else%>
+      <li><%= link_to "Register", new_user_registration_path%></li>
+      <li><%= link_to "Login", new_user_session_path%></li>
+      <% end %>
+    </ul>
+  </div>
+</nav>

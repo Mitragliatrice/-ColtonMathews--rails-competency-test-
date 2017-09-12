@@ -23,7 +23,7 @@ class ArticlesController < ApplicationController
   # POST /articles
   def create
     @article = Article.new(article_params)
-    @article = current_user.article.new(params[:post])
+    @article = current_user.article.new(params[:user_id])
     if @article.save
       redirect_to @article, notice: 'Article was successfully created.'
     else

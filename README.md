@@ -40,7 +40,7 @@ The project will have multiple roles that interact with each other.
 - X Can create users and set roles.
 - X Can edit users and change roles.
 - X Can't edit/destroy/create articles.
-- ADMINISTRATE
+- X ADMINISTRATE
 
 ## Article Table
 
@@ -48,13 +48,13 @@ Table will contain title, content, category, user_id.
 
 ## Roles
 
-Petergate
+X petergate
 
 ### Role Names
 
-- user
-- editor
-- admin (Extra Credit)
+- X user
+- X editor
+- X admin (Extra Credit)
 
 ## Database
 
@@ -62,11 +62,11 @@ X Use sqlite
 
 ## Testing
 
-It was requested we use minitest. I'm not familiar with minitest and I have little time to learn, so in order to complete the project, I implimented Rspec.
+It was requested we use minitest. I'm not familiar with minitest and I have little time to learn, so in order to complete the project, I implimented Rspec. In the end, this didn't work out in my favor with my time restraints. I ended up not completing my test suite.
 
 ## Authentication
 
-Devise
+X Devise
 
 ## Templating
 

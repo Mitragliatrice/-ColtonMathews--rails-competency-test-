@@ -1,15 +1,15 @@
 require 'rails_helper'
 
 describe 'navigate' do
-  describe 'home' do
     before do
       user = FactoryGirl.create(:user)
-      FactoryGirl.build_stubbed(:those_article)
-      FactoryGirl.build_stubbed(:stuff_article)
-      FactoryGirl.build_stubbed(:things_article)
+      login_as(user, :scope => :user)
+      FactoryGirl.create(:article_those)
+      FactoryGirl.create(:article_stuff)
+      FactoryGirl.create(:article_things)
       visit root_path
     end
-
+  describe 'home' do
     it 'can be reached successfully' do
       expect(page.status_code).to eq(200)
     end

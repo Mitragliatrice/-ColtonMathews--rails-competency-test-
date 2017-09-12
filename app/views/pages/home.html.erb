@@ -1,9 +1,44 @@
+  
 
+      <br><br>
+      <h1 class="header center orange-text">Check out our articles here</h1>
+      <div class="row center">
+        <%= link_to 'Articles', articles_path, id: "download-button", class: "btn-large waves-effect waves-light orange"%>
+      </div>
+      <br><br>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m4">
+          <h5 class="center">Stuff</h5>
+            <% @articles_stuff.each do |stuff| %>
+            <p>
+            <%= stuff.title %>
+            </p>
+            <p class="light"><%= truncate stuff.content %></p>
+            <% end %>
+        </div>
+        <div class="col s12 m4">
+          <h5 class="center">Those</h5>
+          <% @articles_those.each do |those| %>
+          <p>
+          <%= those.title %>
+          </p>
+          <p class="light">
+          <%= truncate those.content %>
+          </p>
+          <% end %>
+        </div>
+        <div class="col s12 m4">
+          <h5 class="center">Things</h5>
+          <% @articles_things.each do |things| %>
+          <p>
+          <%= things.title %>
+          </p class="light">
+          <%= truncate things.content %>
+          <% end %>
+        </div>
+      </div>
 
-
-<h1>Category "Stuff"</h1>
-<%= render 'stuff' %>
-<h1>Category "Things"</h1>
-<%=  render 'things' %>
-<h1>Category "Those"</h1>
-<%=  render 'those' %>
