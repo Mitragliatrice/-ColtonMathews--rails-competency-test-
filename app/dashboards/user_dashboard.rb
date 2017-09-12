@@ -59,7 +59,6 @@ ATTRIBUTE_TYPES = {
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
-    :article,
     :email,
     :encrypted_password,
     :reset_password_token,
