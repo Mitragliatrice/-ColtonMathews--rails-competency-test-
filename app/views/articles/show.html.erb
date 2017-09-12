@@ -20,5 +20,5 @@
   <%= @article.user_id %>
 </p>
 
-<%= link_to 'Edit', edit_article_path(@article) if editor? && @article.user.id == current_user.id %> |
-<%= link_to 'Back', articles_path %>
+<%= link_to 'Edit', edit_article_path(@article), class: "btn waves-effect waves-light" if editor? && @article.user.id == current_user.id %>
+<%= link_to 'Back', articles_path, class: "btn waves-effect waves-light" %>

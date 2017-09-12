@@ -20,9 +20,9 @@
         <td><%= article.content %></td>
         <td><%= article.category %></td>
         <td><%= article.user_id %></td>
-        <td><%= link_to 'Show', article %></td>
-        <td><%= link_to 'Edit', edit_article_path(article) if editor? && article.user_id == current_user.id%></td>
-        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } if editor? && article.user_id == current_user.id%></td>
+        <td><%= link_to 'Show', article, class: "btn btn-small waves-effect waves-light" %></td>
+        <td><%= link_to 'Edit', edit_article_path(article), class: "btn waves-effect waves-light" if editor? && article.user_id == current_user.id%></td>
+        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn waves-effect waves-light" if editor? && article.user_id == current_user.id%></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Article', new_article_path if editor? %>
+<%= link_to 'New Article', new_article_path, class: "btn waves-effect waves-light" if editor? %>

@@ -20,9 +20,11 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
-
+  <button class="btn waves-effect waves-light orange" type="submit" name="action">
+    <%= f.submit "Sign up", class: "hidden" %>
+  </button>
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    
   </div>
 <% end %>
 
