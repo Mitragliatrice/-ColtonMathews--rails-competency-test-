@@ -2,11 +2,6 @@ require 'rails_helper'
 
 describe 'navigate' do
     before do
-      user = FactoryGirl.create(:user)
-      login_as(user, :scope => :user)
-      FactoryGirl.create(:article_those)
-      FactoryGirl.create(:article_stuff)
-      FactoryGirl.create(:article_things)
       visit root_path
     end
   describe 'home' do
@@ -14,13 +9,13 @@ describe 'navigate' do
       expect(page.status_code).to eq(200)
     end
       it 'shows articles from the stuff category' do
-        expect(page).to have_content("stuff")
+        expect(page).to have_content(/Stuff/)
       end
       it 'shows articles from the things category' do
-        expect(page).to have_content(/things/)
+        expect(page).to have_content(/Things/)
       end
       it 'shows articles from the those category' do
-        expect(page).to have_content(/those/)
+        expect(page).to have_content(/Those/)
       end
   end
 end
