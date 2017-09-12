@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 describe 'navigate' do
-  describe 'index' do
+  describe 'home' do
     it 'can be reached successfully' do
-      visit articles_path
+      visit root_path
       expect(page.status_code).to eq(200)
     end
   end
